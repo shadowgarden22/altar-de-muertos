@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos para hacer un Altar de Muertos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b1055;
+            color: #ffffff;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        
+        .portada {
+            position: relative;
+            width: 100%;
+            height: 450px;
+            background-image: url('imagenes/images.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .portada-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        .portada-titulo {
+            position: relative;
+            z-index: 1;
+            color: #ffffff;
+            font-size: 2.2rem;
+            text-shadow: 2px 2px 5px #000;
+            padding: 0 15px;
+        }
+
+        .grid-elementos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            border-radius: 20px;
+            padding: 25px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            min-height: 220px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 12px;
+            background-color: #ffffff;
+            padding: 4px;
+        }
+
+        .card.verde-claro { background-color: #70cf27; }
+        .card.naranja { background-color: #f26522; }
+        .card.rosa { background-color: #ec008c; }
+        .card.morado { background-color: #92278f; }
+        .card.azul-claro { background-color: #00aeef; }
+        .card.verde-oscuro { background-color: #39b54a; }
+        .card.azul-oscuro { background-color: #0072bc; }
+        .card.amarillo { background-color: #ffc20e; color: #1a1a1a; }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            opacity: 0.95;
+            line-height: 1.2;
+        }
+
+        .amarillo p {
+            color: #222;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #ffcc00;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portada">
+        <div class="portada-overlay"></div>
+        <h1 class="portada-titulo">Elementos para hacer un "Altar de Muertos"</h1>
+    </header>
+
+    <main class="grid-elementos">
+        
+        <div class="card verde-claro">
+            <img src="imagenes/images (1).jpg" alt="Calaverita" class="card-img">
+            <h3>Calaverita de azúcar</h3>
+            <p>(Representación del difunto)</p>
+        </div>
+
+        <div class="card naranja">
+            <img src="imagenes/images (2).jpg" alt="Bebida" class="card-img">
+            <h3>Bebida</h3>
+            <p>(Que degustaba en vida)</p>
+        </div>
+
+        <div class="card rosa">
+            <img src="imagenes/images (3).jpg" alt="Comida" class="card-img">
+            <h3>Comida</h3>
+            <p>(Lo que disfrutaba en vida)</p>
+        </div>
+
+        <div class="card morado">
+            <img src="imagenes/images (4).jpg" alt="Cempasúchil" class="card-img">
+            <h3>Cempasúchil</h3>
+            <p>(Guía el camino de las almas)</p>
+        </div>
+
+        <div class="card azul-claro">
+            <img src="imagenes/images (5).jpg" alt="Pan de muerto" class="card-img">
+            <h3>Pan de muerto</h3>
+            <p>(Representa fraternidad)</p>
+        </div>
+
+        <div class="card verde-oscuro">
+            <img src="imagenes/images (6).jpg" alt="Incienso" class="card-img">
+            <h3>Incienso / Copal</h3>
+            <p>(Purificación del ambiente)</p>
+        </div>
+
+        <div class="card azul-oscuro">
+            <img src="imagenes/images (7).jpg" alt="Veladora" class="card-img">
+            <h3>Veladora</h3>
+            <p>(Luz que guía al difunto al altar)</p>
+        </div>
+
+        <div class="card naranja">
+            <img src="imagenes/images (8).jpg" alt="Papel picado" class="card-img">
+            <h3>Papel picado</h3>
+            <p>(Unión de la vida y la muerte)</p>
+        </div>
+
+        <div class="card amarillo">
+            <img src="imagenes/images (9).jpg" alt="Fotografía" class="card-img">
+            <h3>Fotografía</h3>
+            <p>(Honra al fiel difunto)</p>
+        </div>
+
+        <div class="card rosa">
+            <img src="imagenes/images (10).jpg" alt="Vaso de agua" class="card-img">
+            <h3>Vaso de agua</h3>
+            <p>(Mitiga la sed del alma viajera)</p>
+        </div>
+
+        <div class="card azul-claro">
+            <img src="imagenes/images (11).jpg" alt="Sal" class="card-img">
+            <h3>Sal</h3>
+            <p>(Purifica el espíritu en su viaje)</p>
+        </div>
+
+        <div class="card verde-oscuro">
+            <img src="imagenes/images (12).jpg" alt="Cruz de ceniza" class="card-img">
+            <h3>Cruz de ceniza</h3>
+            <p>(Expiación de las culpas)</p>
+        </div>
+
+    </main>
+
+</body>
+</html>
